@@ -4,7 +4,7 @@ import person from "../assets/main_person.png";
 const Home = () => {
   return (
     <div className="flex font-[Open_Sans] h-screen ">
-      <div className="left w-[60%] pl-20 pt-15 md:w-[50%] md:pl-10 md:pt-25">
+      <div className="left pl-20 pt-15 md:w-[50%] md:pl-10 md:pt-25">
         <h3 className="text-[30px] md:text-[40px] md:ml-10 ">Hi, I'm</h3>
         <h2 className="text-[50px] mb-5 md:text-[70px] md:mb-10 md:ml-20 lg:ml-30  ">
           OLAMIDE <br />
