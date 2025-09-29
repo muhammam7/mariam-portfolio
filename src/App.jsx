@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/navbar'
-import Home from './components/Home'
-import Experience from './components/Experience'
-import Services from './components/Services'
-import Connect from './components/Connect'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Experience from "./components/Experience";
+import Services from "./components/Services";
+import Connect from "./components/Connect";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <main>
         <section id="home">
-            <Home />
+          <Home />
         </section>
 
         <section id="services">
@@ -29,10 +29,8 @@ function App() {
           <Connect />
         </section>
       </main>
-      
     </>
   );
 }
 
-
-export default App
+export default App;
