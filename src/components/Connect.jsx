@@ -17,6 +17,7 @@ const Connect = () => {
             name="connect"
             className="mx-10 flex flex-col"
             netlify
+            method="post"
           >
             <div className=" mt-5 flex-1">
               <label htmlFor="name" className="form-label">
