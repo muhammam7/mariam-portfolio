@@ -17,17 +17,8 @@ const Connect = () => {
             name="connect"
             className="mx-10 flex flex-col"
             netlify
-            method="post"
-            data-netlify="true" 
-            netlify-honeypot="bot-field"
+            method="post" 
           >
-            {/* Hidden input so Netlify knows which form this is */}
-            <input type="hidden" name="form-name" value="contact" />
-
-            {/* Honeypot field (hidden from humans, catches bots) */}
-            <p className="hidden">
-            <label>Don’t fill this out: <input name="bot-field" /></label>
-            </p>
             <div className=" mt-5 flex-1">
               <label htmlFor="name" className="form-label">
                 Name
