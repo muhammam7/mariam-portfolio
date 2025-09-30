@@ -21,7 +21,7 @@ const Home = () => {
           help brands connect, engage, and grow.
         </p>
       </div>
-      <div className="right  w-[100%] place-self-end md:place-self-auto md:w-[50%] h-[20%] ">
+      <div className="right  w-[100%] place-self-end md:place-self-auto md:w-[50%]  ">
         <img src={person} alt="" className="mb-0 h-[100%]" />
       </div>
     </div>
