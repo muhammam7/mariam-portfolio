@@ -14,11 +14,11 @@ const Connect = () => {
         </div>
         <div className="form bg-[#0E0E0E]/50 rounded-[12px] mr-4 md:h-[60%] md:w-[40%] md:m-20 md:place-self-center ">
           <form
-            name="connect"
+            name="contact"
             className="mx-10 flex flex-col"
-            netlify
             method="post" 
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className=" mt-5 flex-1">
               <label htmlFor="name" className="form-label">
                 Name
