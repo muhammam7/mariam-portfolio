@@ -30,6 +30,7 @@ const Connect = () => {
                 className="form-input h-10 font-[Crimson-Text]"
                 id="name"
                 name="name"
+                required
               />
             </div>
             <div className="mb-3 flex-2">
@@ -42,6 +43,7 @@ const Connect = () => {
                 className="form-input h-10  font-[Crimson-Text]"
                 id="email"
                 name="email"
+                required
               />
             </div>
             <div className="flex-5">
@@ -53,6 +55,7 @@ const Connect = () => {
                 id="message"
                 name="message"
                 className="form-input w-[100%]"
+                required
               ></textarea>
             </div>
             <div className="flex-1">
