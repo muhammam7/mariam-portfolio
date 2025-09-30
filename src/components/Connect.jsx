@@ -18,6 +18,7 @@ const Connect = () => {
             action="html_form_submit.asp"
             method="get"
             className="mx-10 flex flex-col"
+            netlify
           >
             <div className=" mt-5 flex-1">
               <label htmlFor="name" className="form-label">
