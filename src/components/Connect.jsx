@@ -2,10 +2,18 @@ import React from "react";
 import React, { useState } from "react";
 
 const Connect = () => {
-  const [beforeForm, setBeforeForm] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = () => {
-    setBeforeForm(!beforeForm);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    fetch("/", {
+      method: "POST",
+      body: formData,
+    })
+      .then(() => setSubmitted(true))
+      .catch((error) => alert(error));
   };
 
   return (
@@ -24,8 +32,15 @@ const Connect = () => {
           </p>
         </div>
         <div className="form bg-[#0E0E0E]/50 rounded-[12px] mr-4 md:h-[60%] md:w-[40%] md:m-20 md:place-self-center ">
-          {beforeForm ? (
-            <form name="contact" className="mx-10 flex flex-col" method="post">
+          {submitted ? (
+            <p>Thank you, Your message has been sent. Would reach out soon</p>
+          ) : (
+            <form
+              name="contact"
+              className="mx-10 flex flex-col"
+              method="post"
+              onSubmit={handleSubmit}
+            >
               <input type="hidden" name="form-name" value="contact" />
               <div className=" mt-5 flex-1">
                 <label htmlFor="name" className="form-label">
@@ -74,8 +89,6 @@ const Connect = () => {
                 </button>
               </div>
             </form>
-          ) : (
-            <p className="font-[Crimson-Text] ">Your form has been submitted</p>
           )}
         </div>
       </div>
