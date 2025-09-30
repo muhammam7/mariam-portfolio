@@ -19,7 +19,7 @@ const Connect = () => {
     <div className="h-screen font-[Crimson-Text] flex flex-col ">
       <div className="upper  flex-[8] pl-10 ml-5 md:flex mr-5">
         <div className="connect-text md:w-[50%]">
-          <h2 className=" text-6xl mt-5 mb-10  md:text-[64px] md:mt-10 md:mb-10 md:ml-10  lg:ml-40 sm:text-green-700 md:text-blue-700 lg:text-black">
+          <h2 className=" text-5xl mt-5 mb-10  md:text-[64px] md:mt-10 md:mb-10 md:ml-10  lg:ml-40">
             Let's <br /> Connect...
           </h2>
           <h3 className="text-2xl mb-4  md:text-[48px] md:mb-20 md:ml-10 lg:ml-40">
@@ -30,9 +30,9 @@ const Connect = () => {
             Phone Number: +234-703-770-9512
           </p>
         </div>
-        <div className="form bg-[#0E0E0E]/50 rounded-[12px] mr-4 md:h-[60%] md:w-[40%] md:m-20 md:place-self-center ">
+        <div className="form bg-[#0E0E0E]/50 rounded-[12px] mr-4 md:h-[60%] md:w-[40%] md:m-20 md:place-self-center">
           {submitted ? (
-            <p>Thank you, Your message has been sent. Would reach out soon</p>
+            <p className="font-[Crimson-Text] text-2xl h-[100%] content-center mx-10 ">Thank you, Your message has been sent. Would reach out soon...</p>
           ) : (
             <form
               name="contact"
