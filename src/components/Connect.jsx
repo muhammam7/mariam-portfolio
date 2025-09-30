@@ -14,7 +14,7 @@ const Connect = () => {
         </div>
         <div className="form bg-[#0E0E0E]/50 rounded-[12px] mr-4 md:h-[60%] md:w-[40%] md:m-20 md:place-self-center ">
           <form
-            name="input"
+            name="connect"
             action="html_form_submit.asp"
             method="get"
             className="mx-10 flex flex-col"
