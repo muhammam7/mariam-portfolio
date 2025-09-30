@@ -39,7 +39,7 @@ const Connect = () => {
               name="contact"
               className="mx-10 flex flex-col"
               method="post"
-              action={handleSubmit}
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className=" mt-5 flex-1">

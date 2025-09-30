@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
 import Services from "./components/Services";
-import Connect from "./components/Connect.1";
+import Connect from "./components/Connect";
 
 function App() {
   return (
